@@ -11,7 +11,7 @@ public class ManagerTest {
 
     @Before
     public void before() {
-        manager = new Manager("Jeff", 12345, 100.00);
+        manager = new Manager("Jeff", 12345, 100.00, "Doughnuts");
     }
 
     @Test
@@ -27,5 +27,10 @@ public class ManagerTest {
     @Test
     public void managerHasSalary() {
         assertEquals(100.00, manager.getSalary(), 0.1);
+    }
+
+    @Test
+    public void managerHasDepartmentName() {
+        assertEquals("Doughnuts", manager.getDepartmentName());
     }
 }

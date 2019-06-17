@@ -15,17 +15,17 @@ public class DatabaseAdminTest {
     }
 
     @Test
-    public void developerHasName(){
+    public void databaseAdminHasName(){
         assertEquals("Francis", databaseAdmin.getName());
     }
 
     @Test
-    public void developerHasNINumber(){
+    public void databaseAdminHasNINumber(){
         assertEquals(23456, databaseAdmin.getNINumber());
     }
 
     @Test
-    public void developerHasSalary(){
+    public void databaseAdminHasSalary(){
         assertEquals(50.00, databaseAdmin.getSalary(), 0.1);
     }
 }

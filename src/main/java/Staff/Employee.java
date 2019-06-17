@@ -16,6 +16,13 @@ public abstract class Employee {
         return name;
     }
 
+    public void setName(String name) {
+        if (name != null){
+            this.name = name;
+        }
+
+    }
+
     public int getNINumber() {
         return NINumber;
     }
@@ -25,7 +32,9 @@ public abstract class Employee {
     }
 
     public void raiseSalary(double raise) {
-        this.salary = this.salary * raise;
+        if (raise > 0) {
+            this.salary = this.salary * raise;
+        }
     }
 
     public double payBonus() {
